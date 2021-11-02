@@ -15,16 +15,16 @@ contents = [line.strip() for line in f.readlines()]
 f = open('styles.txt', 'r')
 styles = [line.strip() for line in f.readlines()]
 
+output_dir = 'output/'
+src_file = os.path.join(output_dir, 'walking_neutral.bvh')
+ref_file = os.path.join(output_dir, 'jumping_old.bvh')
+
 
 if __name__ == '__main__':
     test_options = TestOptions()
     opt = test_options.parse()
     print('Start test on cuda:%s' % opt.gpu_ids)
 
-    # create dataset
-    output_dir = 'output/'
-    src_file = os.path.join(output_dir, 'walking_neutral.bvh')
-    ref_file = os.path.join(output_dir, 'jumping_old.bvh')
     fetcher = TestInputFetcher(opt)
 
     # create model, trainer, logger
@@ -55,7 +55,9 @@ if __name__ == '__main__':
     inputs.update(ref_input)
     inputs.update(latent_input)
 
+    # stylize with a reference motion
     output_ref = tester.test(model, inputs, alter='ref')
+    # stylize with a random noise
     output_latent = tester.test(model, inputs, alter='latent')
 
     output_ref_file = os.path.join(output_dir, 'output_ref.bvh')
