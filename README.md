@@ -73,7 +73,7 @@ If you find our work useful, please cite our paper as below:
 ```
 
 ## Acknowledgements
-This repository contains some code of the following projects: \
+This repository contains code snippets of the following projects: \
 https://theorangeduck.com/page/deep-learning-framework-character-motion-synthesis-and-editing
 https://github.com/yysijie/st-gcn \
 https://github.com/clovaai/stargan-v2 \
