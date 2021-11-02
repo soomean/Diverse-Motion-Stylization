@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ## Prepare data
 1. Download the datasets from the following link: https://drive.google.com/drive/folders/1Anr9ouHSnZ80C9u2SB6X0f2Clzs4v7Dp?usp=sharing
-2. Upzip and put them in the `datasets` directory
+2. Put them in the `datasets` directory
 
 ## Download pretrained model
 1. `mkdir checkpoints`
@@ -83,4 +83,4 @@ https://github.com/DeepMotionEditing/deep-motion-editing
 This work is licensed under the terms of the MIT license.
 
 ## Contact
-If there's any question about this project, please feel free to [me](sumny@kaist.ac.kr).
+If you have any question, please feel free to contact [me](sumny@kaist.ac.kr).
