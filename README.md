@@ -9,7 +9,7 @@ This is the official Pytorch implementation of this [paper](https://dl.acm.org/d
 > Appeared in: PACM on Computer Graphics and Interactive Techniques (PACMCGIT)
 
 > Paper: https://dl.acm.org/doi/pdf/10.1145/3480145 \
-> Project: http://motionlab.kaist.ac.kr/?page_id=6301
+> Project: http://lava.kaist.ac.kr/?page_id=6301
 
 >**Abstract:** This paper presents a novel deep learning-based framework for translating a motion into various styles within multiple domains. Our framework is a single set of generative adversarial networks that learns stylistic features from a collection of unpaired motion clips with style labels to support mapping between multiple style domains. We construct a spatio-temporal graph to model a motion sequence and employ the spatial-temporal graph convolution networks (ST-GCN) to extract stylistic properties along spatial and temporal dimensions. Through spatial-temporal modeling, our framework shows improved style translation results between significantly different actions and on a long motion sequence containing multiple actions. In addition, we first develop a mapping network for motion stylization that maps a random noise to style, which allows for generating diverse stylization results without using reference motions. Through various experiments, we demonstrate the ability of our method to generate improved results in terms of visual quality, stylistic diversity, and content preservation.
 
