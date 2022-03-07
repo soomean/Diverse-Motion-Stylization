@@ -44,7 +44,7 @@ def load_from_maya(root):
             not any(pm.listRelatives(c, s=True)) and 
             (any(pm.listRelatives(c, ad=True, ap=False, type='joint')) or isinstance(c, pm.nt.Joint))]
         
-        map(lambda c: unload_joint(c, parents, id), children)
+        list(map(lambda c: unload_joint(c, parents, id), children))
 
     unload_joint(root, parents, -1)
     
